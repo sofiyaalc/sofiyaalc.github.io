@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8">
+ <title>Blog</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@500&display=swap" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+ <link rel="icon" type="image/ico" href="logo1.png">
+<style>
+ body {
+  width: 1200px;
+  background: #F4F4EE;
+  font-family: 'Poppins', sans-serif;
+  margin-left: auto; 
+  margin-right: auto;
+ }
+ #logo {
+  text-align: center;
+  padding-top: 20px;
+ }
+ hr {
+  height: 1px;
+  background-color: black;
+ }
+ #nav {
+  text-align: center;
+  font-weight: bold;
+  margin-left: 40px;
+  margin-right: 90px;
+  font-size: 18px;
+ }
+ #dog {
+  width: 200px;
+  position: relative;
+  left: 521px;
+  top: 15px;
+ }
+ #top table {
+  border-spacing: 12px;
+  border-collapse: separate;
+ }
+ ul {
+  display: flex;
+  align-items: stretch;
+  list-style-type: none;
+  overflow: hidden;
+  justify-content: space-between;
+ }
+ .hover {
+  display: inline-block;
+  position: relative;
+  color: black;
+ }
+ .hover:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.35s ease-out;
+ }
+ .hover:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+ }
+ .blogpic {
+  position: relative;
+  left: 80px;
+ }
+ .here {
+  width: 650px;
+ }
+ .top1 {
+  font-size: 35px;
+ }
+ .top1text {
+  font-size: 20px;
+  font-family: 'Mukta', sans-serif;
+ }
+ .reminder {
+  font-size: 22px;
+ }
+ #header {
+  padding-left: 70px;
+  padding-right: 50px;
+ }
+ .aheader {
+  height: 4px;
+  background-color: #F2CC8F;
+  border: none;
+ }
+ .color {
+  background-color: #F2CC8F;
+  border-radius: 15px;
+  width: 540px;
+ }
+ #blogs {
+  padding-left: 70px;
+  padding-right: 50px;
+ }
+ #blogs table {
+  border-spacing: 15px;
+  border-collapse: separate;
+ }
+ .adoptapettd {
+  width: 540px;
+ }
+ .blowpaws {
+  position: relative;
+ }
+ .wbtitle {
+  font-size: 25px;
+  padding-left: 15px;
+ }
+ .text {
+  padding-left: 15px;
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+ }
+ #footer {
+  background-color:#E8E1DE;
+ }
+ #footer table {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+ }
+ .ftlogo {
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 20px;
+ }
+ .ftfollow {
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-right: 80px;
+  font-size: 13px;
+  border-left: 1px solid black;
+ }
+ .ftfollow img {
+  vertical-align: text-bottom;
+ }
+ .ftcontact{
+  padding-left: 25px;
+  padding-top: 10px;
+  font-size: 13px;
+  border-left: 1px solid black;
+ }
+ .ftcontact img {
+  vertical-align: text-bottom;
+ }
+ #footer a {
+  color: black;
+  text-decoration: none;
+ }
+ #footer a:hover {
+ color: black;
+ }
+
+</style>
+</head>
+
+<body>
+ <div id="logo"><a href="Home.html"><img src="logo.png" height="80" width="141" alt="petmalu logo"></a></div>
+ <div id="dog"><img src="dog.png" height="25" alt="shadow of dog"></div>
+ <hr>
+ <div id="nav">
+  <ul>
+   <li><a href="Home.html"><span class="hover">Home</span></a></li>
+   <li><a href="Why.html"><span class="hover">Why</span></a></li>
+   <li><a href="Info.html"><span class="hover">Info</span></a></li>
+   <li><a href="Blogs.html"><span class="hover">Blogs</span></a></li>
+   <li><a href="Shelters.html"><span class="hover">Shelters</span></a></li>
+   <li><a href="About.html"><span class="hover">About</span></a></li>
+   <li><a href="References.html"><span class="hover">References</span></a></li>
+  </ul>
+ </div>
+ <div id="header">
+  <table>
+   <tr>
+    <td class="here"><p><span class="top1">Here are several blog sites for pet owners who wish to share their own pet stories and experiences!</span><br><br><br><span class="reminder">Reminder: </span><span class="top1text">Reading blogs may also help you discover new things about your own pet! However, this information should always be validated by genuine research as you should not always accept everything you see on the internet especially when it comes to your most beloved pet.</span></td>
+	<td><span class="blogpic"><img src="blogpic.png" height="325" alt="dog in front of screen"></span></td>
+   </tr>
+  </table>
+ </div>
+ 
+ <div>
+ <hr class="aheader">
+ </div>
+ 
+ <div id="blogs">
+  <table>
+   <tr>
+    <td><a href="https://adoptapet.com/public/about_us/"><img src="https://images-ra.adoptapet.com/images/adoptapetlogo2017.svg" height="60" alt="adopt a pet logo"></a></td>
+    <td><a href="https://blogpaws.com/"><img src="https://blogpaws.com/wp-content/themes/dot-theme/img/BlogPaws-Logo-300-transA.png" height="60" alt="blog paws logo"></a></td>
+   </tr>
+   <tr>
+    <td class="color"><span class="wbtitle">Adopt a Pet</span><br><p><span class="text">This non-profit pet organization helps rescued pets get adopted. But if you already have a houseful of pets, you’ll still want to check it out! Adopt A Pet’s blog offers tips on training, health, safety, nutrition, and more for cats and dogs.</span></p></td>
+    <td class="color"><span class="wbtitle">Blog Paws</span><br><p><span class="text">With the tagline “Shaping social media excellence, influence and education one amazing pet parent at a time” it is clear to see that the community behind this pet blog is full of passion for pets. Bringing together pet enthusiasts through social media, this blog is best for communicating ideas and tips.</span></p></td>
+   </tr>
+   <tr>
+    <td><a href="https://allaboutcats.com/"><img src="https://allaboutcats.com/wp-content/themes/ribosome/img/allaboutcats-logo.svg" height="30" alt="all about cats logo"></a></td>
+    <td><a href="https://petlifetoday.com/about/"><img src="https://petlifetoday.com/wp-content/uploads/2019/02/PetLifeToday_logo_r_small.png" height="70" alt="pet life today logo"></a></td>
+   </tr>
+   <tr>
+    <td class="color"><span class="wbtitle">All About Cats</span><br><p><span class="text">As you can tell from the name, this blog is focused on cats. We’re All About Cats is a popular cat blog that offers advice on cat behavior and common ailments, the best food and toys, and whether you should consider pet insurance.</span></p></td>
+    <td class="color"><span class="wbtitle">Pet Life Today</span><br><p><span class="text">Pet Life Today is mostly focused on dogs and cats, though you can find articles on rabbits and other pets. They offer extensive product guides and a certified veterinarian board of advisors. Have a specific question? Try their Ask the Vet feature!</span></p></td>
+   </tr>
+   <tr>
+    <td><a href="https://www.keepingexoticpets.com/about/"><img src="kep.png" height="100" alt="keeping exotic pets logo"></a></td>
+    <td><a href="https://www.gopetfriendly.com/blog/about-us/"><img src="https://www.gopetfriendly.com/blog/wp-content/themes/twentytwenty/images/header-logo-gpf.svg" height="90" alt="go pet friendly logo"></a></td>
+   </tr>
+   <tr>
+    <td class="color"><span class="wbtitle">Keeping Exotic Pets</span><br><p><span class="text">Bored of the usual cats and dogs? Here’s a pet blog that focuses on tarantulas, insects, and reptiles. On Keeping Exotic Pets, you can learn all about raising praying mantises and what you should feed poison dart frogs!</span></p></td>
+    <td class="color"><span class="wbtitle">Go Pet Friendly</span><br><p><span class="text">Want to travel with your pet but not sure where to start? Go Pet Friendly is for you! Their Take Paws blog is all about traveling with pets. They offer lists of pet-friendly hotels and campgrounds, road trip planners, and packing guides.</span></p></td>
+   </tr>
+   <tr>
+    <td><a href="https://www.petbucket.com/"><img src="https://static.cdnbridge.com/resources/18/160536/Image/Theme-2020/petbucket.png" height="100" alt="pet bucket logo"></a></td>
+    <td><a href="https://animalfoundation.com/about-us"><img src="https://animalfoundation.com/application/themes/animalfoundation/img/logo.png" height="60" alt="the animal foundation logo"></a></td>
+   </tr>
+   <tr>
+    <td class="color"><span class="wbtitle">Pet Bucket</span><br><p><span class="text">Pet Bucket offers health, safety, and training tips for dogs and cats. Learn about behavior quirks, what you should consider before adopting a new pet, and how to help your pet through common ailments.</span></p></td>
+    <td class="color"><span class="wbtitle">The Animal Foundation</span><br><p><span class="text">The Animal Foundation is a non-profit spay and neuter clinic based in Las Vegas that specializes in treating all kinds of sick and injured pets. Their blog offers tips on training, pet health, safety, and more!</span></p></td>
+   </tr>
+   </table>
+ </div>
+ 
+ <div>
+ <hr class="aheader">
+ </div>
+ <br>
+ <div id="footer">
+  <table>
+   <tr>
+    <td class="ftlogo"><img src="logo.png" height="70" alt="petmalu logo"></td>
+	<td class="ftfollow">Follow us!<br><a href="https://www.facebook.com/"><img src="fb.png" height="25" alt="facebook logo"> PETmalu PAGE</a><br><a href="https://twitter.com/home?lang=en"><img src="twt.png" height="25" alt="twiter logo"> @PETmalu</a> <br><a href="https://www.tiktok.com/"><img src="tt.png" height="25" alt="tiktok logo"> @PETmaluTikTok</a><br></td>
+	<td class="ftcontact">Contact us:<br><img src="call.png" height="25" alt="phone icon"> +63 2 987654321<br><img src="mail.png" height="25" alt="mail icon"> petmalu@gmaildotcom<br><img src="add.png" height="25" alt="address icon"> 124 Conch Street, Bikini Bottom, Pacific Ocean<br></td>
+   </tr>
+  </table>
+ </div>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8">
+ <title>References</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@500&display=swap" rel="stylesheet">
+ <link rel="icon" type="image/ico" href="logo1.png">
+<style>
+body {
+  width: 1200px;
+  background: #F4F4EE;
+  font-family: 'Poppins', sans-serif;
+  margin-left: auto; 
+  margin-right: auto;
+ }
+ #logo {
+  text-align: center;
+  padding-top: 20px;
+ }
+ hr {
+  height: 1px;
+  background-color: black;
+ }
+ #nav {
+  text-align: center;
+  font-weight: bold;
+  margin-left: 40px;
+  margin-right: 90px;
+  font-size: 18px;
+ }
+ ul {
+  display: flex;
+  align-items: stretch;
+  list-style-type: none;
+  overflow: hidden;
+  justify-content: space-between;
+ }
+ li {
+  display: block;
+  flex: 0 1 auto; 
+  list-style-type: none;
+  float: left;
+ }
+ li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+ }
+ li a:hover {
+  background-color: #E8E1DE;
+ }
+ </style>
+</head>
+
+<body>
+ <div id="logo"><a href="home.html"><img src="logo.png" height="80" width="141" alt="petmalu logo"></a></div>
+ <div id="dog"><img src="dog.png" height="25" alt="shadow of dog"></div>
+ <hr>
+ <div id="nav">
+  <ul>
+   <li><a href="home.html">Home</a></li>
+   <li><a href="why.html">Why</a></li>
+   <li><a href="info.html">Info</a></li>
+   <li><a href="blogs.html">Blogs</a></li>
+   <li><a href="shelters.html">Shelters</a></li>
+   <li><a href="about.html">About</a></li>
+   <li><a href="references.html">References</a></li>
+  </ul>
+ </div>

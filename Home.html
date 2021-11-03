@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8">
+ <title>Home</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+ <link rel="icon" type="image/ico" href="logo1.png">
+<style>
+ body {
+  width: 1200px;
+  background: #F4F4EE;
+  font-family: 'Poppins', sans-serif;
+  margin-left: auto; 
+  margin-right: auto;
+ }
+ #logo {
+  text-align: center;
+  padding-top: 20px;
+ }
+ hr {
+  height: 2px;
+  background-color: black;
+  border: none;
+ }
+ #nav {
+  text-align: center;
+  font-weight: bold;
+  margin-left: 40px;
+  margin-right: 90px;
+  font-size: 18px;
+ }
+ #dog {
+  width: 200px;
+  position: relative;
+  left: 95px;
+  top: 15px;
+ }
+ ul {
+  display: flex;
+  align-items: stretch;
+  list-style-type: none;
+  overflow: hidden;
+  justify-content: space-between;
+ }
+ .hover {
+  display: inline-block;
+  position: relative;
+  color: black;
+ }
+.hover:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.35s ease-out;
+ }
+.hover:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+ }
+ #box table {
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 12px;
+  border-collapse: separate;
+ }
+ #box td {
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 15px;
+  padding-top: 10px;
+ }
+ .welcometitle {
+  font-size: 40px;
+ }
+ .whyttitle {
+  font-size: 30px;
+  position: relative;
+  bottom: 20px;
+  left: 13px;
+ }
+ .infotitle {
+  font-size: 30px;
+  float: right;
+ }
+ .blogtitle {
+  position: relative;
+  bottom: 17px;
+  left: 13px;
+  font-size: 30px;
+  float: left;
+ }
+ .sheltertitle {
+  position: relative;
+  font-size: 30px;
+  left: 13px;
+  float: left;
+ }
+ a {
+  color: black;
+  text-decoration: none;
+ }
+ .whytext {
+  font-size: 15px;
+  position: relative;
+  bottom: 20px;
+  left: 13px;
+ }
+ .welcomeimg {
+  position: relative;
+  top: 21px;
+ }
+ .whyimg {
+  position: relative;
+  top: 9px;
+  float: right;
+ }
+ .infoimg {
+  position: relative;
+  top: 11px;
+  left: 25px;
+ }
+ .blogimg {
+  position: relative;
+  right: 10px;
+  top: 10px;
+ }
+ .shelterimg {
+  float: right;
+ }
+ #footer {
+  background-color:#E8E1DE;
+ }
+ #footer table {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+ }
+ .ftlogo {
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 20px;
+ }
+ .ftfollow {
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-right: 80px;
+  font-size: 13px;
+  border-left: 1px solid black;
+ }
+ .ftfollow img {
+  vertical-align: text-bottom;
+ }
+ .ftcontact{
+  padding-left: 25px;
+  padding-top: 10px;
+  font-size: 13px;
+  border-left: 1px solid black;
+ }
+ .ftcontact img {
+  vertical-align: text-bottom;
+ }
+ .welcomebox {
+  background-color: #b4c8d1;
+ }
+ .whybox {
+  background-color: #8FAD9E;
+ }
+ .infobox {
+  background-color: #D4836E;
+ }
+ .blogsbox {
+  background-color: #F2CC8F;
+ }
+ .shelterbox {
+  background-color: #9A8C98;
+ }
+ 
+</style>
+</head>
+
+<body>
+ <div id="logo"><a href="Home.html"><img src="logo.png" height="80" width="141" alt="petmalu logo"></a></div>
+ <div id="dog"><img src="dog.png" height="25" alt="shadow of dog"></div>
+ <hr>
+ <div id="nav">
+  <ul>
+   <li><a href="Home.html"><span class="hover">Home</span></a></li>
+   <li><a href="Why.html"><span class="hover">Why</span></a></li>
+   <li><a href="Info.html"><span class="hover">Info</span></a></li>
+   <li><a href="Blogs.html"><span class="hover">Blogs</span></a></li>
+   <li><a href="Shelters.html"><span class="hover">Shelters</span></a></li>
+   <li><a href="About.html"><span class="hover">About</span></a></li>
+   <li><a href="References.html"><span class="hover">References</span></a></li>
+  </ul>
+ </div>
+
+ <div id="box">
+  <table>
+   <tr>
+    <td colspan="2" class="welcomebox">
+	 <table>
+	  <tr>
+	   <td><p><span class="welcometitle">Welcome!</span><br>At PETmalu, we want to be able to help people in deciding whether they should get a pet and how to properly take care of them.<br><br>Click any page to learn more!</p></td>
+	   <td><span class="welcomeimg"><img src="welcome.png" height="330" width="390" alt="golden retriever"></span></td>
+	 </table>
+	</td>
+	<td class="whybox"><p><a href="Why.html"><span class="whyttitle">So, why a pet?</span></a><br><span class="whytext">Here are some of the reasons why <br>you should get a pet!</span><br><span class="whyimg"><img src="why.png" height="250" alt="cat"></span></p></td>
+   </tr>
+   <tr>
+    <td class="infobox" style="width:270px;"><a href="Info.html"><span class="infotitle">Things to<br>consider</span></a><span class="infoimg"><img src="info.png" height="180" alt="dog tilting head"></span></td>
+	<td class="blogsbox" style="width:280px;"><a href="Blogs.html"><span class="blogtitle">Blogs</span></a><span class="blogimg"><img src="blog.png" height="150" alt="parrot"></span></td>
+	<td class="shelterbox" style="width:300px;"><a href="Shelters.html"><span class="sheltertitle">Shelters</span></a><span class="shelterimg"><img src="shelter.png" height="140" alt="dog looking up"></span></td>
+   </tr>
+  </table>
+ </div>
+ 
+ <div id="footer">
+  <table>
+   <tr>
+    <td class="ftlogo"><img src="logo.png" height="70" alt="petmalu logo"></td>
+	<td class="ftfollow">Follow us!<br><a href="https://www.facebook.com/"><img src="fb.png" height="25" alt="facebook logo"> PETmalu PAGE</a><br><a href="https://twitter.com/home?lang=en"><img src="twt.png" height="25" alt="twiter logo"> @PETmalu</a> <br><a href="https://www.tiktok.com/"><img src="tt.png" height="25" alt="tiktok logo"> @PETmaluTikTok</a><br></td>
+	<td class="ftcontact">Contact us:<br><img src="call.png" height="25" alt="phone icon"> +63 2 987654321<br><img src="mail.png" height="25" alt="mail icon"> petmalu@gmaildotcom<br><img src="add.png" height="25" alt="address icon"> 124 Conch Street, Bikini Bottom, Pacific Ocean<br></td>
+   </tr>
+  </table>
+ </div>
+
+</body>
+</html>

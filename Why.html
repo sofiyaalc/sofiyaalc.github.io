@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8">
+ <title>Why</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@500&display=swap" rel="stylesheet">
+ <link rel="icon" type="image/ico" href="logo1.png">
+<style>
+ body {
+  width: 1200px;
+  background: #F4F4EE;
+  font-family: 'Poppins', sans-serif;
+  margin-left: auto; 
+  margin-right: auto;
+ }
+ #logo {
+  text-align: center;
+  padding-top: 20px;
+ }
+ hr {
+  height: 1px;
+  background-color: black;
+ }
+ #nav {
+  text-align: center;
+  font-weight: bold;
+  margin-left: 40px;
+  margin-right: 90px;
+  font-size: 18px;
+ }
+ #dog {
+  width: 200px;
+  position: relative;
+  left: 245px;
+  top: 15px;
+ }
+ ul {
+  display: flex;
+  align-items: stretch;
+  list-style-type: none;
+  overflow: hidden;
+  justify-content: space-between;
+ }
+ .hover {
+  display: inline-block;
+  position: relative;
+  color: black;
+ }
+ .hover:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.35s ease-out;
+ }
+ .hover:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+ }
+ #left {
+  width: 790px;
+  float: left;
+ }
+ #left table {
+  width: 795px;
+  border-spacing: 20px;
+ }
+ #left td {
+  padding: 10px;
+  border-radius: 100px 10px 10px 100px;
+  background-color:#8FAD9E;
+ }
+ .headleft {
+  font-size: 28px;
+ }
+ .kbit {
+  font-size: 25px;
+  position: relative;
+  left: 20px;
+ }
+ .kfittext {
+  position: relative;
+  left: 19px;
+  bottom: 20px;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+ }
+ .bmstext {
+  position: relative;
+  left: 20px;
+  bottom: 20px;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+ }
+ .imawtext {
+  position: relative;
+  bottom: 30px;
+  left: 20px;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+ }
+ .tcomtext {
+  position: relative;
+  bottom: 25px;
+  left: 20px;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+ }
+ .imgbox {
+  position: relative;
+  top: 3px;
+  float: left;
+ }
+ .imgbox2 {
+  position: relative;
+  top: 10px;
+  float: left;
+ }
+ .imgbox3 {
+  position: relative;
+  top: 10px;
+  float: left;
+ }
+ .imgbox4 {
+  position: relative;
+  top: 10px;
+  float: left;
+ }
+ #right {
+  width: 400px;
+  float: right;
+  border-left: thick outset;
+  border-color: #81B29A;
+ }
+ #right table {
+  border-spacing: 10px;
+  padding-left: 20px;
+ }
+ #right td {
+  border-radius: 15px;
+  background: #8FAD9E;
+  width: 100%;
+  font-size: 10px;
+  text-align: left;
+ }
+ #right img {
+  float: left;
+  padding: 10px;
+  vertical-align: middle;
+ }
+ #right h3 {
+  padding-left: 10px;
+ }
+ .bms {
+  padding-right: 10px;
+ }
+ td a {
+  color: black;
+  text-decoration: none;
+ }
+ td a:hover {
+  color: white;
+ }
+ #footer {
+  background-color:#E8E1DE;
+ }
+ #footer table {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+ }
+ .ftlogo {
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 20px;
+ }
+ .ftfollow {
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-right: 80px;
+  font-size: 13px;
+  border-left: 1px solid black;
+ }
+ .ftfollow img {
+  vertical-align: text-bottom;
+ }
+ .ftcontact{
+  padding-left: 25px;
+  padding-top: 10px;
+  font-size: 13px;
+  border-left: 1px solid black;
+ }
+ .ftcontact img {
+  vertical-align: text-bottom;
+ }
+ #footer a {
+  color: black;
+  text-decoration: none;
+ }
+ #footer a:hover {
+ color: black;
+ }
+ .body-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+ }
+ .righttitle {
+  position: relative;
+  top: 10px;
+  font-size: 14px;
+ }
+ .website {
+  font-size: 14px;
+  float: left;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+ }
+ .aheader {
+  height: 4px;
+  background-color: #81B29A;
+  border: none;
+ }
+
+</style>
+</head>
+<body>
+ <div id="logo"><a href="Home.html"><img src="logo.png" height="80" width="141" alt="petmalu logo"></a></div>
+ <div id="dog"><img src="dog.png" height="25" alt="shadow of dog"></div>
+ <hr>
+ <div id="nav">
+  <ul>
+   <li><a href="Home.html"><span class="hover">Home</span></a></li>
+   <li><a href="Why.html"><span class="hover">Why</span></a></li>
+   <li><a href="Info.html"><span class="hover">Info</span></a></li>
+   <li><a href="Blogs.html"><span class="hover">Blogs</span></a></li>
+   <li><a href="Shelters.html"><span class="hover">Shelters</span></a></li>
+   <li><a href="About.html"><span class="hover">About</span></a></li>
+   <li><a href="References.html"><span class="hover">References</span></a></li>
+  </ul>
+ </div>
+ 
+ <div class="body-container">
+ <div id="left">
+  <span class="headleft">Here are some of the reasons why you should get a pet!</span>
+  <table>
+   <tr>
+    <td class="kfitbox"><span class="imgbox"><img src="8.png" height="150" style="border-radius: 100%;" alt="girl and dog running"></span><span class="kbit">To Keep You Fit -------------------------</span><br><br><span class="kfittext">Since pets require frequent exercise and playtime, owning a pet can increase<br> your opportunities for exercise. It will help you with your mental, emotional, <br>and physical health. In fact, being physically healthy can help you live longer.</span></td>
+   </tr>
+   <tr>
+    <td class="bms"><span class="imgbox2"><img src="9.png" height="150" style="border-radius: 100%;" alt="dog surrounded by people"></span><span class="kbit">To Help You Become More Social ----------</span><br><br><span class="bmstext">Owning a pet would significantly improve your social relationships. They can <br>help you meet new people and socialize because dog owners often stop and <br>chat to one another when walking, hiking, or at a dog park. Some social clubs <br>have even been founded for pet owners that have same interests.</span></td>
+   </tr>
+   <tr>
+    <td class="imaw"><span class="imgbox3"><img src="10.png" height="150" style="border-radius: 100%;" alt="cat smiling"></span><span class="kbit">To Improve Your Mood And Well-being ----</span><br><br><p><span class="imawtext">Pets may help you unwind after a long day at work. They can provide you with relief and comfort. According to a 2003 research, petting an animal after a stressful situation lessened anxiety. </span></p></td>
+   </tr>
+   <tr>
+    <td class="tcom"><span class="imgbox4"><img src="11.png" height="150" style="border-radius: 100%;" alt="two rabbits on grass"></span><span class="kbit">To Have The Best Companions ------------</span><br><br><span class="tcomtext">Pets are not prejudiced. They would not be concerned with your social or <br>economic standing and would accept you for who you are. Their company may <br>help you avoid sickness and possibly add years to your life.  Caring for an animal may make you feel loved while diverting your attention away from your troubles.</span></td>
+   </tr>
+  </table>
+ </div>
+ 
+ <div id="right">
+ <h3>Want to know more?</h3>
+  <table>
+   <tr>
+    <td><img src="https://i.insider.com/5e4ed75aa9f40c0c6348ab33?width=1000&format=jpeg&auto=webp" height=100 style="border-radius: 20%;" alt="dog and cat next to each other"><a href="https://www.insider.com/reasons-why-having-a-pet-is-good-for-you"><p><span class="righttitle">15 reasons why having a pet is good for you and your family</span></p></a><span class="website">Insider</span></td>
+   </tr>
+    <tr>
+    <td><img src="https://www.helpguide.org/wp-content/uploads/dog-licks-man-768.jpg" height=100 width=130 style="border-radius: 20%;" alt="dog licking mans face"><a href="https://www.helpguide.org/articles/mental-health/mood-boosting-power-of-dogs.htm"><p><span class="righttitle">The Health and Mood-Boosting Benefits of Pets</span></p></a><span class="website">HelpGuide</span></td>
+   </tr>
+    <tr>
+    <td><img src="https://goldenheartscottsdale.com/wp-content/uploads/2019/10/bigstock-Portrait-Of-Elegant-Senior-Wom-241655197.jpg" height=100 width=130 style="border-radius: 20%;" alt="elder person hugging a beagle"><a href="https://www.helpinghandshomecare.co.uk/blog/why-pets-are-the-perfect-companion-for-the-elderly/"><p><span class="righttitle">Why pets are the perfect companion for the elderly</span></p></a><span class="website">Helping Hands</span></td>
+   </tr>
+    <tr>
+    <td><img src="https://images.saymedia-content.com/.image/c_limit%2Ccs_srgb%2Cq_auto:eco%2Cw_620/MTc0NDU1ODM4ODU2MzI0NzQy/8-top-reasons-you-should-get-a-pet.webp" height=100 width=130 style="border-radius: 20%;" alt="dog on chair"><a href="https://pethelpful.com/pet-ownership/8-Top-Reasons-You-Should-Get-a-Pet"><p><span class="righttitle">8 Top Reasons You Should Get a Pet</span></p></a><span class="website">PetHelpful</span></td>
+   </tr>
+    <tr>
+    <td><img src="https://website-cdn.animalfriends.co.uk/uploads/2016/02/10-benefits-of-owning-a-pet-2.jpg" height=100 width=130 style="border-radius: 20%;" alt="dog running"><a href="https://www.animalfriends.co.uk/blog/10-benefits-of-owning-a-pet/"><p><span class="righttitle">10 Benefits of Owning a Pet</span></p></a><span class="website">Animal Friends</span></td>
+   </tr>
+    <tr>
+    <td><img src="http://www.lonetreevet.com/blog/wp-content/uploads/2017/02/LoneTree_iStock-106396236-1024x724.jpg" height=100 width=130 style="border-radius: 20%;" alt="dog, parrot, rabbit, hamster, snake, cat, fish"><a href="https://www.webmd.com/hypertension-high-blood-pressure/features/health-benefits-of-pets"><p><span class="righttitle">5 Ways Pets Can Improve Your Health</span></p></a><span class="website">Web MD</span></td>
+   </tr>
+  </table>
+ </div>
+ </div>
+ 
+ <div>
+  <hr class="aheader">
+ </div>
+ 
+ <br>
+ <div id="footer">
+  <table>
+   <tr>
+    <td class="ftlogo"><img src="logo.png" height="70" alt="petmalu logo"></td>
+	<td class="ftfollow">Follow us!<br><a href="https://www.facebook.com/"><img src="fb.png" height="25" alt="facebook logo"> PETmalu PAGE</a><br><a href="https://twitter.com/home?lang=en"><img src="twt.png" height="25" alt="twiter logo"> @PETmalu</a> <br><a href="https://www.tiktok.com/"><img src="tt.png" height="25" alt="tiktok logo"> @PETmaluTikTok</a><br></td>
+	<td class="ftcontact">Contact us:<br><img src="call.png" height="25" alt="phone icon"> +63 2 987654321<br><img src="mail.png" height="25" alt="mail icon"> petmalu@gmaildotcom<br><img src="add.png" height="25" alt="address icon"> 124 Conch Street, Bikini Bottom, Pacific Ocean<br></td>
+   </tr>
+  </table>
+ </div>
+
+</body>
+</html>

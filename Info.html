@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8">
+ <title>Info</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@500&display=swap" rel="stylesheet">
+ <link rel="icon" type="image/ico" href="logo1.png">
+<style>
+ body {
+  width: 1200px;
+  background: #F4F4EE;
+  font-family: 'Poppins', sans-serif;
+  margin-left: auto; 
+  margin-right: auto;
+ }
+ #logo {
+  text-align: center;
+  padding-top: 20px;
+ }
+ hr {
+  height: 1px;
+  background-color: black;
+ }
+ #nav {
+  text-align: center;
+  font-weight: bold;
+  margin-left: 40px;
+  margin-right: 90px;
+  font-size: 18px;
+ }
+ #dog {
+  width: 200px;
+  position: relative;
+  left: 382px;
+  top: 15px;
+ }
+ ul {
+  display: flex;
+  align-items: stretch;
+  list-style-type: none;
+  overflow: hidden;
+  justify-content: space-between;
+ }
+ .hover {
+  display: inline-block;
+  position: relative;
+  color: black;
+ }
+ .hover:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.35s ease-out;
+ }
+ .hover:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+ }
+ #content table {
+  width: 1200px;
+  border-spacing: 12px;
+  border-collapse: separate;
+ }
+ .res {
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #D4836E;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+ }
+ .fstatus {
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #D4836E;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+ }
+ .environ {
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #D4836E;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+ }
+ .commit {
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #D4836E;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+ }
+  #footer {
+  background-color:#E8E1DE;
+ }
+ #footer table {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+ }
+ .ftlogo {
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 20px;
+ }
+ .ftfollow {
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-right: 80px;
+  font-size: 13px;
+  border-left: 1px solid black;
+ }
+ .ftfollow img {
+  vertical-align: text-bottom;
+ }
+ .ftcontact{
+  padding-left: 25px;
+  padding-top: 10px;
+  font-size: 13px;
+  border-left: 1px solid black;
+ }
+ .ftcontact img {
+  vertical-align: text-bottom;
+ }
+ #footer a {
+  color: black;
+  text-decoration: none;
+ }
+ #footer a:hover {
+ color: black;
+ }
+ #header hr {
+  height: 1px;
+  background-color: white;
+  border: none;
+ }
+ #content img {
+  position: relative;
+ }
+ .dyheader {
+  font-size: 30px;
+  position: relative;
+  bottom: 20px;
+ }
+ .here {
+  font-size: 25px;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  position: relative;
+  bottom: 20px;
+ }
+ .resimg {
+  position: relative;
+  bottom: 130px;
+ }
+ .monimg {
+  position: relative;
+  bottom: 195px;
+ }
+ .sapimg {
+  position: relative;
+  bottom: 130px;
+ }
+ .clockimg {
+  position: relative;
+  bottom: 65px;
+ }
+ .research {
+  font-size: 27px;
+  position: relative;
+  bottom: 125px;
+ }
+ .financial {
+  font-size: 27px;
+  position: relative;
+  bottom: 190px;
+ }
+ .environment {
+  font-size: 27px;
+  position: relative;
+  bottom: 125px;
+ }
+ .commitment {
+  font-size: 27px;
+  position: relative;
+  bottom: 55px;
+ }
+ .restext {
+  position: relative;
+  bottom: 110px;
+ }
+ .restext2 {
+  position: relative;
+  bottom: 80px;
+ }
+ .ftext {
+  position: relative;
+  bottom: 110px;
+ }
+ .fstatustext {
+  position: relative;
+  bottom: 250px;
+ }
+ .environtext {
+  position: relative;
+  bottom: 90px;
+ }
+ .committext {
+  position: relative;
+  bottom: 30px;
+ }
+ .thin {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+ } 
+ .resthin {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  position: relative;
+  bottom: 110px;
+ }
+ .resthin1 {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  position: relative;
+  bottom: 70px;
+ }
+ .fthin {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  position: relative;
+  bottom: 100px;
+ }
+ .hrb {
+  height: 4px;
+  background-color: #D4836E;
+  border: none;
+ }
+ iframe {
+  border: 10px #D4836E solid;
+  border-radius: 20px;
+ }
+ .headerdy {
+  width: 600px;
+ }
+ .aheader {
+  height: 4px;
+  background-color: #D4836E;
+  border: none;
+ }
+ .ibtw {
+  height: 3px;
+  background-color: #F4F4F4;
+  border: none;
+ }
+ .resibtw {
+  height: 3px;
+  background-color: #F4F4F4;
+  border: none;
+  position: relative;
+  bottom: 90px;
+ }
+ .fstatusimg {
+  position: relative;
+  bottom: 140px;
+ }
+ .ibtw2 {
+  height: 3px;
+  background-color: #F4F4F4;
+  border: none;
+  position: relative;
+  bottom: 220px;
+ }
+ .fibtw {
+  height: 3px;
+  background-color: #F4F4F4;
+  border: none;
+  position: relative;
+  bottom: 120px;
+ }
+ .fibtw2 {
+  height: 3px;
+  background-color: #F4F4F4;
+  border: none;
+  position: relative;
+  bottom: 80px;
+ }
+ .fimg2 {
+  position: relative;
+  bottom: 100px;
+ }
+ .enthin {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  position: relative;
+  bottom: 90px;
+ }
+ .enthin2 {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  position: relative;
+  bottom: 60px;
+ }
+ .enibtw {
+  height: 3px;
+  background-color: #F4F4F4;
+  border: none;
+  position: relative;
+  bottom: 90px;
+ }
+ .enibtw2 {
+  height: 3px;
+  background-color: #F4F4F4;
+  border: none;
+  position: relative;
+  bottom: 70px;
+ }
+ .enibtw3 {
+  height: 3px;
+  background-color: #F4F4F4;
+  border: none;
+  position: relative;
+  bottom: 50px;
+ }
+ .terrier {
+  position: relative;
+  bottom: 80px;
+ }
+ .shiba {
+  position: relative;
+  bottom: 40px;
+ }
+ .commit {
+  padding-bottom: 10px;
+ }
+</style>
+</head>
+
+<body>
+ <div id="logo"><a href="Home.html"><img src="logo.png" height="80" width="141" alt="petmalu logo"></a></div>
+ <div id="dog"><img src="dog.png" height="25" alt="shadow of dog"></div>
+ <hr>
+ <div id="nav">
+  <ul>
+   <li><a href="Home.html"><span class="hover">Home</span></a></li>
+   <li><a href="Why.html"><span class="hover">Why</span></a></li>
+   <li><a href="Info.html"><span class="hover">Info</span></a></li>
+   <li><a href="Blogs.html"><span class="hover">Blogs</span></a></li>
+   <li><a href="Shelters.html"><span class="hover">Shelters</span></a></li>
+   <li><a href="About.html"><span class="hover">About</span></a></li>
+   <li><a href="References.html"><span class="hover">References</span></a></li>
+  </ul>
+ </div>
+ 
+ <div id="header">
+  <table>
+   <tr>
+    <td class="headerdy"><p><span class="dyheader">Do you want a pet but aren't sure if you'll be able to care for it?</span><br><br><br><span class="here">Here are some of the things you should consider before getting one.</span></p></td>
+	<td><span class="ytvid"><iframe width="560" height="315" src="https://www.youtube.com/embed/V6S51hbyhSk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span></td>
+   </tr>
+  </table>
+ </div>
+ <hr class="hrb">
+ <br><br><br>
+ <div id="content">
+  <table>
+   <tr>
+	<td class="res"><span class="resimg"><img src="res.png" height="150" alt="magnifying glass icon"></span><br><span class="research">Research</span><br><span class="restext">Are you considering the right animal for your lifestyle?</span><br><span class="resthin">Make sure you understand the needs of the pet you want and that you will be able to fulfill them. This is a common issue that some new pet owners face. Some of them aren't familiar enough with their pets' demands, and the pet suffers as a result, or the pet they want isn't fit for their lifestyle. In this scenario, you might want to think again about getting a pet.</span><br><hr class="resibtw"><span class="restext2">Are you prepared to deal with special problems that a pet can cause?</span><br><span class="resthin1">Scratched-up furniture, accidents from animals who aren't yet housetrained, fleas, pet hair, and unexpected medical emergencies are unfortunate but common aspects of pet ownership.</span></td>
+	<td class="fstatus"><span class="monimg"><img src="fstatus.png" height="150" alt="dollar sign icon"></span><br><span class="financial">Financial Status</span><br><span class="fstatusimg"><img src="https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2016/11/15/104110072-GettyImages-532497498.jpg?v=1493384199" height="180" style="border-radius: 5%;" alt="dog biting money"></span><br><hr class="fibtw"><span class="ftext">Can you afford to have a pet?</span><br><span class="fthin">Pet ownership may come with a hefty price. Licensing fees, training programs, medical care, grooming, toys, food, kitty litter, and other costs may soon mount up.</span><hr class="fibtw2"><br><span class="fimg2"><img src="https://dogtime.com/assets/uploads/2019/07/DogMoney.jpg" height="145" style="border-radius: 5%;" alt="puppy surrounded by money"></span></td>
+	<td class="environ"><span class="sapimg"><img src="environ.png" height="150" alt="sapling icon"></span><br><span class="environment">Environment</span><br><span class="environtext">Are your living arrangements suitable for the animal you have in mind?</span><br><span class="enthin">The size of the animal isn't the only factor to consider. Some little dogs, such as terriers, are extremely energetic and require a lot of exercise.</span><hr class="enibtw"><span class="terrier"><img src="https://media.kidadl.com/608041a7c0b83ba1b1f1149d_read_these_biewer_terrier_facts_about_the_small_size_terrier_breed_f15debd774.jpg" height="170" style="border-radius: 5%;" alt="terrier running"></span><hr class="enibtw2"><span class="enthin2">Some large dogs, on the other hand, are laid-back and willing to lay on a couch all day. Choose an animal that will fit into your living situation.</span><hr class="enibtw3"><span class="shiba"><img src="https://blog.myollie.com/content/images/2019/12/three-dogs-pose-on-happily-on-a-sofa.jpg" height="165" style="border-radius: 5%;" alt="3 shiba inus on the couch"></span></td>
+	<td class="commit"><span class="clockimg"><img src="commit.png" height="150" alt="clock icon"></span><br><span class="commitment">Commitment</span><br><span class="committext">Do you have time for a pet?</span><span class="thin">You can't disregard your dog, cat, or other animal companions just because you're tired or busy. Every day of the year, they require food, drink, exercise, care, and company.</span><hr class="ibtw">Will you be a responsible pet owner? <br><span class="thin">This entails not just following community rules, but also being responsible for your pet in public and keeping your pet safe at home. Of course, providing your pet with love, companionship, exercise, a nutritious food, and regular veterinarian treatment are all essential.</span><hr class="ibtw"> Are you prepared to keep and care for the pet for his or her entire lifetime? <br><span class="thin">When you adopt a pet, you are committing to care for them for the rest of their life. Sharing your life with a companion animal may be extremely rewarding, but only if you're ready to make the necessary time, financial, and emotional commitments for the rest of the pet's life.</span></td>	
+   </tr>
+  </table>
+ </div>
+
+ <div>
+  <hr class="aheader">
+ </div>
+ <br>
+ <div id="footer">
+  <table>
+   <tr>
+    <td class="ftlogo"><img src="logo.png" height="70" alt="petmalu logo"></td>
+	<td class="ftfollow">Follow us!<br><a href="https://www.facebook.com/"><img src="fb.png" height="25" alt="facebook logo"> PETmalu PAGE</a><br><a href="https://twitter.com/home?lang=en"><img src="twt.png" height="25" alt="twiter logo"> @PETmalu</a> <br><a href="https://www.tiktok.com/"><img src="tt.png" height="25" alt="tiktok logo"> @PETmaluTikTok</a><br></td>
+	<td class="ftcontact">Contact us:<br><img src="call.png" height="25" alt="phone icon"> +63 2 987654321<br><img src="mail.png" height="25" alt="mail icon"> petmalu@gmaildotcom<br><img src="add.png" height="25" alt="address icon"> 124 Conch Street, Bikini Bottom, Pacific Ocean<br></td>
+   </tr>
+  </table>
+ </div>
+
+</body>
+</html>
